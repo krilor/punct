@@ -21,7 +21,7 @@ This technique can be used in other shells like zsh. The current setup script pr
 ## Installing
 
 punct isn't really something that you install, it's just a bit of configuration in your shell/environment.
-The script [punct.sh](./punct.sh) can be used to do the required setup or remove the configuration alltogether.
+The script [punct.sh](./punct.sh) can be used to do the required setup or remove the configuration all together.
 
 ```bash
 # first, get the script and make it executable
@@ -116,6 +116,7 @@ You might want to look into other options for managing your dot-files. Here are 
 * https://dotty.cloud/
 * https://github.com/knoebber/dotfile
 * https://medium.com/@waterkip/managing-my-dotfiles-with-gnu-stow-262d2540a866
+* https://github.com/webpro/awesome-dotfiles
 
 ## Contributions
 
