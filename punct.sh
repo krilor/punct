@@ -27,15 +27,11 @@ function setup() {
 
 
     # bash-completion
-    if [ ! -f $HOME/.local/share/bash-completion/punct ]; then
-        echo "Ensuring bash-completion"
-        mkdir -p $HOME/.local/share/bash-completion/completions
-        ln -s /usr/share/bash-completion/completions/git $HOME/.local/share/bash-completion/punct
+    completion_file=$HOME/.local/share/bash-completion/completions/punct
+    if [ ! -f $completion_file ]; then
+        echo "source /usr/share/bash-completion/completions/git" > $completion_file
+        echo "complete -o bashdefault -o default -o nospace -F __git_wrap__git_main punct" >> $completion_file
     fi
-
-    grep -Eq '^complete .* punct$' $HOME/.bashrc &&
-    sed -i "s/^complete .* punct$/complete -o bashdefault -o default -o nospace -F __git_wrap__git_main punct/" $HOME/.bashrc ||
-    echo "complete -o bashdefault -o default -o nospace -F __git_wrap__git_main punct" >> $HOME/.bashrc
 
     echo "Done! You probably want to source ~/.bashrc now"
 }
@@ -49,7 +45,7 @@ function remove(){
     echo "Done"
 }
 
-case "$1" in 
+case "$1" in
     setup)
         setup
         ;;
