@@ -7,7 +7,7 @@
 
 In addition, I've added [bash autocomplete](https://www.gnu.org/software/bash/manual/html_node/Programmable-Completion.html) by wrapping gits autocomplete.
 
-If you want to know the details of how this works, check out this [nice post](https://www.atlassian.com/git/tutorials/dotfiles) by [Nicola Paolucci](https://twitter.com/durdn).
+If you want to know the details of how this works, check out this [nice post](https://www.atlassian.com/git/tutorials/dotfiles) by [Nicola Paolucci](https://twitter.com/durdn) or [this more recent one](https://marcel.is/managing-dotfiles-with-git-bare-repo/) by [Marcel Krčah](https://marcel.is).
 
 ## Prerequisites
 
