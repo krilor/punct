@@ -114,6 +114,12 @@ punct ls-files
 You might want to look into other options for managing your dot-files. Here are a few:
 
 * https://dotty.cloud/
+* https://yadm.io/
+* https://www.chezmoi.io/
+* https://github.com/andsens/homeshick
+* https://github.com/technicalpickles/homesick
+* https://github.com/thoughtbot/rcm
+* https://www.gnu.org/software/stow/
 * https://github.com/knoebber/dotfile
 * https://medium.com/@waterkip/managing-my-dotfiles-with-gnu-stow-262d2540a866
 * https://github.com/webpro/awesome-dotfiles
